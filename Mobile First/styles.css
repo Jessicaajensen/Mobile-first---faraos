@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    top:0;
+    z-index: 2;
+    position: fixed;
+    
+}
+
+#laptopnav_top{
+    font-family: 'Luckiest Guy';
+    background-color: #fff0c8;
+    display: flex;
+    justify-content: right;
+    padding: 1.7% 0%;
+    margin-bottom: 3.5px;
+    padding-right: 1.1%;
+}
+
+#laptopnav_top a{
+    letter-spacing: 1px;
+    color: #c3996e;
+    background-color: #402415;
+    font-size: medium;
+    border-radius: 20px;
+    margin-right:50px;
+    padding:2px 15px;
+    padding-top:6px;
+    text-decoration: none;
+}
+
+#laptopnav_top a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#laptopnav_bottom {
+    font-family: 'Luckiest Guy', cursive;
+    padding: 0.5% 0%;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #402415;
+
+}
+
+#laptopnav_bottom a {
+    letter-spacing: 0.5px;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: bold;
+    color: #c3996e;
+}
+
+#laptopnav_bottom #navleft a{
+    padding-left:100px;
+}
+
+#laptopnav_bottom #navright a{
+    padding-right:70px;
+}
+
+
+#laptopnav_bottom a:hover{
+    cursor: pointer;
+
+    animation-name: navting;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+#navn img{
+    position: absolute;
+    left: 4%;
+    top: 10%;
+    width: 350px;
+}
+
+#logo img{
+    position: absolute;
+    width: 9%;
+    padding-left:45.5%;
+    top: 20px;
+
+    animation-name: logoting;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  input[type="text"] {
+    margin-top: 23%;
+    width: 560px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    outline: none;
+}
+@keyframes navting{
+    from{letter-spacing:0.5;}
+    to{letter-spacing:1px;}
+}
+
+@keyframes logoting{
+from{top:-250%;}
+to{top:10%;}
+}
+
+.row .kort {
+    background-color: #997e5b;
+}
+
+/*@media only screen and (min-width: 1200px){*/
+    main{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #maincontent{
+        width: 80%;
+    }
+
+    main h1{
+        font-family: 'Luckiest Guy', cursive;
+        letter-spacing: 4px;
+        margin-top: 6%;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-left:5px;
+        
+    }
+    .row{
+        width: 100%;
+        height: 400px;
+        display:grid;
+        grid-template-columns: 54% 44%;
+        grid-gap:45px;
+    }
+
+    .row section {
+        background-color: #402415; 
+  
+    }
+
+    #nyheder .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+    }
+
+    #tilbud .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+        grid-column-start:2;
+    }
+
+    #pop .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+    }
+    #mobilnav{
+        display: none;
+    }
+
+
+@media only screen and (max-width: 1200px){
+
+    header #laptopnav_top{
+        display: none;
+    }
+
+    header #laptopnav_bottom{
+        display: none;
+    }
+    
+    h1{
+        margin:30px;
+    }
+
+    #mobilnav{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobilnav a{
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: xx-large;
+        margin-right:50px;
+        margin-top:55px;
+        text-decoration: none;
+    }
+
+    #navn{
+        display:none;
+    }
+
+    #mobilnav img{
+        width: 90px;
+        margin-left:40px;
+        margin-top:-15px;
+    }
+   
+    main{
+    flex-direction: column;
+}
+    .row .section{
+        width: 93%;
+        height: 400px;
+        margin: auto;
+        margin-top:2%;
+    }
+}
+
+footer{
+    background-color: #fff0c8;
+    color: rgb(0, 0, 0);
+    height: 350px;
+    padding : 20px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.firekollonner{
+    display:flex;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 10%;
+}
