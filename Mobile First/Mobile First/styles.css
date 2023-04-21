@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    top:0;
+    z-index: 2;
+    
+}
+
+#laptopnav_top{
+    font-family: 'Luckiest Guy';
+    background-color: #fff0c8;
+    display: flex;
+    justify-content: right;
+    padding: 1.7% 0%;
+    padding-right: 1.1%;
+}
+
+#laptopnav_top a{
+    letter-spacing: 1px;
+    color: #c3996e;
+    background-color: #402415;
+    font-size: medium;
+    border-radius: 20px;
+    margin-right:50px;
+    padding:2px 15px;
+    padding-top:6px;
+    text-decoration: none;
+}
+
+#laptopnav_top a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#laptopnav_bottom {
+    font-family: 'Luckiest Guy', cursive;
+    padding: 0.5% 0%;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #402415;
+
+}
+
+#laptopnav_bottom a {
+    letter-spacing: 0.5px;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: bold;
+    color: #c3996e;
+}
+
+#laptopnav_bottom #navleft a{
+    padding-left:100px;
+}
+
+#laptopnav_bottom #navright a{
+    padding-right:70px;
+}
+
+
+/*----Stylig af dropdown menu----*/
+
+.drop{
+    position:relative;
+    z-index:10;
+    display:inline-block;
+}
+
+.drop:hover{
+    display: inline-block;
+    background-color: #402415;
+    color:#fff0c8;
+    border:0 solid black;
+    cursor:pointer;
+}
+
+.drop-menu{
+    position:absolute;
+    display: none;
+    min-width: 100px;
+    background-color: #fff0c8;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.drop:hover .drop-menu{
+    display: block;
+
+}
+
+.drop-menu a{
+    display:block;
+    padding:10px;
+    
+    text-decoration: none;
+    border-width: 0;
+    border-top: 1px solid white;
+
+}
+
+.drop-menu a:hover{
+    background-color:#402415;
+    
+    
+}
+
+#laptopnav_bottom a:hover{
+    cursor: pointer;
+
+    animation-name: navting;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+#logo img{
+    position: absolute;
+
+    animation-name: logoting;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+.search-box {
+    position:relative;
+    top:82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 9%;
+    background-image: url(naruto.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+  }
+  
+  input[type="text"] {
+    margin-top: 19%;
+    width: 35%;
+    padding: 1%;
+    border-radius: 25px;
+    border: 1px solid black;
+    outline: none;
+}
+
+main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff0c8;
+}
+#maincontent{
+    width: 80%;
+}
+
+main h1{
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 6%;
+    letter-spacing: 4px;
+    color:#c3996e;
+}
+
+
+.row section {
+    background-color: #402415; 
+
+
+}
+
+@keyframes navting{
+    from{letter-spacing:0.5;}
+    to{letter-spacing:1px;}
+}
+
+@keyframes logoting{
+from{top:-250%;}
+to{top:10%;}
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    header{
+        position: fixed;
+    }
+
+    #logo img{
+        width: 9%;
+        padding-left:45.5%;
+        top: 20px;
+    }
+
+    main h1{
+        letter-spacing: 4px;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-left:5px;
+    }
+    .row{
+        width: 100%;
+        height: 400px;
+        display:grid;
+        grid-template-columns: 53% 43%;
+        grid-gap:45px;
+        margin-bottom:100px;
+    }
+
+    #tilbud{
+        grid-template-columns: 43% 53%;
+        
+    }
+
+    #nyheder .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+    }
+
+    #tilbud .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+        grid-column-start:2;
+    }
+
+    #nyheder .item1 img{
+        width:100%;
+
+    }
+    #pop .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+    }
+    #mobilnav{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+
+    header #laptopnav_top{
+        display: none;
+    }
+
+    header #laptopnav_bottom{
+        display: none;
+    }
+
+    #mobilnav{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff0c8;
+    }
+
+    #mobilnav a{
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: xx-large;
+        margin-right:50px;
+        margin-top:45px;
+        text-decoration: none;
+    }
+
+    #nyheder .item1 img{
+        width: 100%;
+    }
+    
+    #mobilnav img{
+        width: 90px;
+        margin-left:40px;
+        margin-top:-35px;
+    }
+
+    #logo{
+        top:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        position: relative;
+        top:10px;
+    }
+
+    #logo img{
+        width: 150px;
+        top:10px;
+        z-index:2;
+    
+    }
+
+    .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+    input[type="text"] {
+        margin-top: 200px;
+        margin-bottom:100px;
+        width: 308px;
+        height: 37px;
+        border-radius: 40px;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:70px
+    }
+
+    .row{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        margin-bottom:100px;
+    }
+
+    .row section{
+        height: 300px;
+        margin-top:15px;
+    }
+}
+
+footer{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 350px;
+    padding : 20px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.firekollonner{
+    display:flex;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 10%;
+}
