@@ -67,6 +67,51 @@ header{
 }
 
 
+/*----Stylig af dropdown menu----*/
+
+.drop{
+    position:relative;
+    z-index:10;
+    display:inline-block;
+}
+
+.drop:hover{
+    display: inline-block;
+    background-color: #402415;
+    color:#fff0c8;
+    border:0 solid black;
+    cursor:pointer;
+}
+
+.drop-menu{
+    position:absolute;
+    display: none;
+    min-width: 100px;
+    background-color: #fff0c8;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.drop:hover .drop-menu{
+    display: block;
+
+}
+
+.drop-menu a{
+    display:block;
+    padding:10px;
+    
+    text-decoration: none;
+    border-width: 0;
+    border-top: 1px solid white;
+
+}
+
+.drop-menu a:hover{
+    background-color:#402415;
+    
+    
+}
+
 #laptopnav_bottom a:hover{
     cursor: pointer;
 
@@ -87,19 +132,20 @@ header{
 }
 
 .search-box {
+    position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 9%;
     background-image: url(naruto.png) ;
-    background-size: 100% auto;
-    
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     
 
   }
   
-  input[type="text"] {
+  input{
     margin-top: 19%;
     width: 35%;
     padding: 1%;
@@ -123,12 +169,17 @@ main h1{
     font-family: 'Luckiest Guy', cursive;
     margin-top: 6%;
     letter-spacing: 4px;
+    color:#c3996e;
 }
 
 
 .row section {
     background-color: #402415; 
+}
 
+main div .row img{
+    min-width: 100%;
+    min-height: 100%;
 }
 
 @keyframes navting{
@@ -146,6 +197,10 @@ to{top:10%;}
 
     header{
         position: fixed;
+    }
+
+    .search-box {
+        top: 82px;
     }
 
     #logo img{
@@ -172,6 +227,7 @@ to{top:10%;}
 
     #tilbud{
         grid-template-columns: 43% 53%;
+        
     }
 
     #nyheder .item1{
@@ -189,6 +245,10 @@ to{top:10%;}
         grid-column-start:2;
     }
 
+    #nyheder .item1 img{
+        width:100%;
+
+    }
     #pop .item1{
         height: 100%;
         width: 100%;
@@ -198,7 +258,73 @@ to{top:10%;}
     #mobilnav{
         display: none;
     }
+
+    #mobilfooter{
+        display: none;
+    }
+
+    #laptopfooter{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    height: 270px;
+    padding: 5% 7%;
+    display: flex;
+    }
+
+    .femkollonner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    }
+
+    .femkollonner .lister{
+    width: 19%;
+    }
+
+    .femkollonner h3{
+    font-family: 'Luckiest Guy';
+    font-size: x-large;
+    color:#c3996e; 
+    border-radius: 15px;
+    padding: 15px 0px 5px 0px;
+    }
+
+    ul{ 
+    list-style-type: none;
+    text-align: left;
+    justify-content: center;
+    font-family: sans-serif;
+    padding: 32px 0px;
+    }
+
+    .lister ul li {
+        margin: 10px 0;
+        text-align: center;
+        font-family: 'Luckiest Guy';
+    }
+
+    .footerikoner{
+    height: 250px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 42px; 
+    }
+
+    .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    }
+
+    .footerlogo {
+    padding-top: 40px;
+    }
+
 }
+
 
 
 @media only screen and (max-width: 1200px){
@@ -227,6 +353,10 @@ to{top:10%;}
         text-decoration: none;
     }
 
+    #nyheder .item1 img{
+        width: 100%;
+    }
+    
     #mobilnav img{
         width: 90px;
         margin-left:40px;
@@ -246,6 +376,7 @@ to{top:10%;}
     #logo img{
         width: 150px;
         top:10px;
+        z-index:2;
     
     }
 
@@ -284,6 +415,218 @@ to{top:10%;}
         height: 300px;
         margin-top:15px;
     }
+
+    #laptopfooter{
+        display: none;
+    }
+
+    #mobilfooter {
+        display: block;
+    }
+
+    #mobilfooter{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        padding: 2% 10%;
+        display: flex;
+        flex-direction: column;
+        height:1200px;
+        }
+
+    #mobilfooter .footerikoner{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /*padding-top: 20px;*/
+        }
+    
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        }
+            
+    .footerlogo {
+        padding-top: 40px;
+        }
+        
+    .footerlogo img{
+        margin-bottom: 10px;
+        }
+
+    .femkollonner{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+        }
+    
+    .femkollonner .lister{
+        width: 25%;
+        }
+    
+    .femkollonner h3{
+        font-family: 'Luckiest Guy';
+        font-size: xx-large;
+        color:#c3996e; 
+        border-radius: 15px;
+        padding: 15px 0px 5px 0px;
+        }
+    
+    ul{ 
+        list-style-type: none;
+        text-align: left;
+        justify-content: center;
+        font-family: sans-serif;
+        padding: 32px 0px;
+        }
+
+    .lister ul li {
+        margin: 10px 0;
+        text-align: center;
+        font-family: 'Luckiest Guy';
+        }
+        
+    ul hr{
+        display: none;
+        } 
+}
+
+/*Mobil*/
+@media only screen and (max-width: 700px){
+    #mobilfooter{
+        display: flex;
+        height:2000px;
+    }
+    
+    .femkollonner{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .femkollonner > div{
+        width: 100%;
+    }
+
+    .femkollonner > .lister{
+        width: 100%;
+    }
+
+    .footerikoner{
+        height: 300px;
+        /*padding-bottom: 20px;*/
+    }
+
+    .lister ul li {
+        text-align: center;
+    }
+
+    ul hr{
+        display: block;
+    }
+    .footerlogo {
+        padding-top: 40px;
+        }
+        
+    .footerlogo img{
+        margin-bottom: 10px;
+        }
+}
+
+/*styles til burgermenu*/
+
+#headermenu {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff0c8;
+    padding: 0 10px 0 22px;
+}
+
+#headermenu a #headermenulogo{
+    transform: rotate(90deg);
+    margin-top: 45%; /*Skubber logoet ned over headeren*/
+}
+
+
+#mainmenu {
+    height: 60vh;
+    background-color: #c3996e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: x-large;
+    background-image: url(tintinburgermenu.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#mainmenu a{
+    width: 45%;/*Længden på stregerne*/
+    border-bottom: 2px solid black;
+}
+
+#mainmenu a, #footermenu a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Luckiest Guy';
+}
+
+#mainmenu a:visited, #footermenu a:visited{
+    color: black;
+}
+
+#mainmenu .mobildropdown{
+    margin-left: 30px;
+    font-size: large;
+}
+
+#mainmenu .mobildropdown a{
+    margin: 10px 0px;
+    line-height: 30px;
+}
+
+#mainmenu, #footermenu {
+    padding: 5% 10% 5% 5%;
+}
+
+#footermenu {
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footermenu div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footermenu div:first-child {
+    justify-content: space-around;
+}
+
+#footermenuikoner {
+    /*background-color: #402415;*/
+    width: 60%;
+    align-items: center;
+}
+
+#footermenuikoner .socials{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+}
+
+#footermenuikoner .footerlogo{
+    display: flex;
+    align-items: center;
+    padding-top: 4%;
 }
 
 footer{
