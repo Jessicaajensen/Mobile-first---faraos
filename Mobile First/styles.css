@@ -163,6 +163,7 @@ main{
 }
 #maincontent{
     width: 80%;
+    margin-top: 5%;
 }
 
 main h1{
@@ -175,12 +176,75 @@ main h1{
 
 .row section {
     background-color: #402415; 
+    
 }
 
 main div .row img{
     min-width: 100%;
     min-height: 100%;
 }
+
+#nyheder .item1 {
+    background-image: url(/img-faraos/marvel_comics_library_avengers_vol_1_1963_1965_xl_gb_book005_x_01162_2205271706_id_1393032.png);
+    background-size: cover;
+}
+
+#nyheder .item2 {
+    background-image: url(/img-faraos/empyre.png);
+    background-size: cover;
+}
+
+#nyheder .item3 {
+    background-image: url(/img-faraos/marveluntold.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#tilbud .item1 {
+    background-image: url(/img-faraos/accueil-t-shirt-tintin-t-noir-00896.w1200.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#tilbud .item2 {
+    background-image: url(/img-faraos/tintin-tintin-and-snowy-flyer-brand-a-transparent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#tilbud .item3 {
+    background-image: url(/img-faraos/tintin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top
+}
+
+#pop .item1 {
+    background-image: url(/img-faraos/Dragon-Ball-Z.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#pop .item2 {
+    background-image: url(/img-faraos/warhammer.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;  
+}
+
+#pop .item3 {
+    background-image: url(/img-faraos/star-wars.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 
 @keyframes navting{
     from{letter-spacing:0.5;}
