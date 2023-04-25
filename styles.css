@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+    text-decoration: none;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    top:0;
+    z-index: 2;
+    
+}
+
+#laptopnav_top{
+    font-family: 'Luckiest Guy';
+    background-color: #fff0c8;
+    display: flex;
+    justify-content: right;
+    padding: 1.7% 0%;
+    padding-right: 1.1%;
+}
+
+#laptopnav_top a{
+    letter-spacing: 1px;
+    color: #c3996e;
+    background-color: #402415;
+    font-size: medium;
+    border-radius: 20px;
+    margin-right:50px;
+    padding:2px 15px;
+    padding-top:6px;
+    text-decoration: none;
+}
+
+#laptopnav_top a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#laptopnav_bottom {
+    font-family: 'Luckiest Guy';
+    padding: 0.5% 0%;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #402415;
+
+}
+
+#laptopnav_bottom a {
+    letter-spacing: 0.5px;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: bold;
+    color: #c3996e;
+}
+
+#laptopnav_bottom #navleft a{
+    padding-left:100px;
+}
+
+#laptopnav_bottom #navright a{
+    padding-right:70px;
+}
+
+
+
+
+/*----Stylig af dropdown menu----*/
+
+.drop{
+    position:relative;
+    z-index:10;
+    display:inline-block;
+}
+
+.drop:hover{
+    display: inline-block;
+    background-color: #402415;
+    color:#fff0c8;
+    border:0 solid black;
+    cursor:pointer;
+}
+
+.drop-menu{
+    position:absolute;
+    display: none;
+    min-width: 100px;
+    background-color: #fff0c8;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.drop:hover .drop-menu{
+    display: block;
+
+}
+
+.drop-menu a{
+    display:block;
+    padding:10px;
+    
+    text-decoration: none;
+    border-width: 0;
+    border-top: 1px solid white;
+
+}
+
+.drop-menu a:hover{
+    background-color:#402415;
+    
+    
+}
+
+#laptopnav_bottom a:hover{
+    cursor: pointer;
+
+}
+
+#logo img{
+    position: absolute;
+
+    animation-name: logoting;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+.search-box {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 9%;
+    background-image: url(naruto.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+  }
+  
+  input{
+    margin-top: 19%;
+    width: 35%;
+    padding: 1%;
+    border-radius: 25px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.navinput {
+    margin: 0;
+    width: auto;
+    height: 20px;
+    
+}
+
+main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff0c8;
+}
+#maincontent{
+    width: 80%;
+}
+
+.main_content .overskrift h2{
+    font-family: 'Luckiest Guy';
+    letter-spacing: 8px;
+}
+
+main h1{
+    font-family: 'Luckiest Guy';
+    margin-top: 15%;
+    letter-spacing: 4px;
+    color:#402415; 
+}
+
+.row section {
+    background-color: #402415; 
+}
+
+main div .row img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#nyheder .item1 {
+    background-image: url(comics.png);
+    background-size: cover;
+}
+
+#nyheder .item2 {
+    background-image: url(empyre.png);
+    background-size: cover;
+}
+
+#nyheder .item3 {
+    background-image: url(marveluntold.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#tilbud .item1 {
+    background-image: url(accueil-t-shirt-tintin-t-noir-00896.w1200.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#tilbud .item2 {
+    background-image: url(tintin-tintin-and-snowy-flyer-brand-a-transparent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#tilbud .item3 {
+    background-image: url(tintin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top
+}
+
+#pop .item1 {
+    background-image: url(Dragon-Ball-Z.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#pop .item2 {
+    background-image: url(warhammer.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;  
+}
+
+#pop .item3 {
+    background-image: url(star-wars.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.row h2 {
+    color: #e0b182;
+    background-color: #402415b1;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    max-width: 40%;
+    text-align: center;
+}
+
+@keyframes navting{
+    from{letter-spacing:0.5;}
+    to{letter-spacing:1px;}
+}
+
+@keyframes logoting{
+from{top:-250%;}
+to{top:10%;}
+}
+
+ /*****************Header******************/
+ .uh #under_logo img{
+    width: 12%;
+    padding-left:6%;
+    top: 20px;
+    position: absolute;
+}
+
+.uh #laptopnav_bottom{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uh #uh_nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*****************Main******************/
+.um{
+    display: flex;
+    width: 100%;
+
+    margin-top: 100px;
+    position: relative;
+} 
+
+.banner_manga{
+    width: 10%;
+    height: 100%;
+
+    align-self: stretch;
+
+    height: 3836px; /*banner højten*/
+    background-repeat: repeat-y;
+    background-position: fixed;
+}
+
+.banner_manga:nth-of-type(1) {
+    background-image: url('billeder/underside/banner/manga/left_2.png');
+}
+
+.banner_manga:nth-of-type(2) {
+    background-image: url('billeder/underside/banner/manga/right_2.png');
+}
+
+.banner_comics{
+    width: 10%;
+    height: 100%;
+
+    align-self: stretch;
+
+    height: 3692px; /*banner højten*/
+    background-repeat: repeat-y;
+    background-position: fixed;
+}
+
+.banner_comics:nth-of-type(1) {
+    background-image: url('billeder/underside/banner/comics/left.png');
+}
+
+.banner_comics:nth-of-type(2) {
+    background-image: url('billeder/underside/banner/comics/right.png');
+}
+
+
+.main_content{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'dosis';
+    width: 80%;
+    background-color: white;
+}
+
+.overskrift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 300px;
+
+    /* padding-top: 100px; */
+}
+
+.overskrift h2{
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    font-size: 150px;
+
+    color: black;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+    width: 20%;
+    height: 100%;
+}
+
+.navigation p{
+    text-align: left;
+
+    font-family:'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.søgebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% auto;
+    
+    background-repeat: no-repeat;
+}
+
+input[type="læsestof"] {
+    width: 90%;
+    
+    padding: 3%;
+    border-radius: 25px;
+    border: 1px solid black;
+    outline: none;
+    background: #FFF0C8;
+}
+
+
+.filter{
+    font-family:'Cormorant';
+
+    width: 80px;
+    height: 25px;
+    left: 339px;
+    top: 341px;
+
+    margin: 15px;
+
+    background: #FFF0C8;
+    border-radius: 2px;
+}
+
+.filter p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family:'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    width: 100%;
+}
+
+.linje{
+    border-bottom: 1px solid black;
+}
+
+.liste{
+    width: 80%;
+}
+
+.liste ul{
+    font-size: 24px;
+    font-family: 'dosis';
+
+    color: black;
+}
+
+.liste li{
+  margin-bottom: 20px; 
+  list-style: circle;
+}
+
+.liste a{
+    color: black; 
+
+    transition: 1s;
+}
+
+.liste a:hover{
+    color: #402415; 
+    text-decoration-line: underline;
+}
+
+.liste h3{
+    font-size: 24px;
+    font-family: 'dosis';
+
+    color: black;
+
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.mobilliste{
+    display: none;
+}
+
+/*******************************************************/
+.kort-wrap{
+    width: 80%;
+    padding: 0 30px;
+
+    /* background-color: rgb(124, 59, 59); */
+}
+
+.mini_kort{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    gap: 40px 60px;
+}
+
+.mini_kort .mini_overskrift {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+   }
+
+.mini_kort .mini_overskrift h4 {
+    font-size: 20px;
+   } 
+
+.mini_kort a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    color: black;
+
+    transition: 1s;
+}
+
+.mini_kort a:hover{
+    scale: 1.05;
+    /* rotate: 3600deg; */
+}
+
+.mini_kort .små_kort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 155px;
+    height: 125px;
+
+    /*width: 127px;
+    height: 102px; */
+
+}
+
+.mini_kort .små_kort img{
+    width: 100%;
+}
+
+.mini_kort .små_kort p{
+    z-index: +1;
+}
+
+#filtsøg, #mobilsøg{
+    display:none;
+}
+
+/*"Tablet*/
+@media only screen and (min-width: 1200px){
+
+    header{
+        position: fixed;
+    }
+
+    .search-box {
+        top: 82px;
+    }
+
+    #logo{
+        top:0px;
+        display: flex;
+        justify-content: center;   
+        display: block;
+        top:10px;
+    }
+
+
+    #logo img{
+        width: 9%;
+        margin-left:45.5%;
+        top: 20px;
+    }
+
+    .uh #logo{
+        display: none;
+    }
+
+    main h1{
+        letter-spacing: 4px;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-left:5px;
+    }
+    .row{
+        width: 100%;
+        height: 400px;
+        display:grid;
+        grid-template-columns: 53% 43%;
+        grid-gap:45px;
+        margin-bottom:100px;
+    }
+
+    #tilbud{
+        grid-template-columns: 43% 53%;
+        
+    }
+
+    #nyheder .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+    }
+
+    #tilbud .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+        grid-column-start:2;
+    }
+
+    #nyheder .item1 img{
+        width:100%;
+
+    }
+    #pop .item1{
+        height: 100%;
+        width: 100%;
+        grid-row-start:1;
+        grid-row-end:3;
+    }
+    #mobilnav{
+        display: none;
+    }
+
+    #mobilfooter{
+        display: none;
+    }
+
+    #laptopfooter{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    height: 270px;
+    padding: 5% 7%;
+    display: flex;
+    border-top: 2px solid #402415;
+    }
+
+    .femkollonner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    }
+
+    .femkollonner .lister{
+    width: 19%;
+    }
+
+    .femkollonner h3{
+    font-family: 'Luckiest Guy';
+    font-size: x-large;
+    color:#c3996e; 
+    border-radius: 15px;
+    padding: 15px 0px 5px 0px;
+    }
+
+    ul{ 
+    list-style-type: none;
+    text-align: left;
+    justify-content: center;
+    font-family: sans-serif;
+    padding: 32px 0px;
+    }
+
+    .lister ul li {
+        margin: 10px 0;
+        text-align: center;
+        font-family: 'Luckiest Guy';
+    }
+
+    .footerikoner{
+    height: 250px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 42px; 
+    }
+
+    .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    }
+
+    .footerlogo {
+    padding-top: 40px;
+    }
+}
+
+/*mobil*/
+@media only screen and (max-width: 1200px){
+
+    header #laptopnav_top{
+        display: none;
+    }
+
+    .main_content .søgebar{
+        display: none;
+    }
+
+    header #laptopnav_bottom{
+        display: none;
+    }
+
+    .uh #laptopnav_bottom{
+        display: none;
+    }
+    
+    .banner_manga, .banner_comics{
+        display: none;
+    }
+
+    #mobilnav{
+        display: block;
+        display: flex;
+        height:15vh;
+        justify-content: space-between;
+        background-color: #fff0c8;
+    }
+
+    #mobilnav a{
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: xx-large;
+        margin-right:50px;
+        margin-top:45px;
+        text-decoration: none;
+    }
+
+    .um{
+        margin: 0 10%;
+        width: auto;
+    }
+
+    .main_content{
+        width: 100%;
+    }
+
+    #filtsøg{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    .overskrift h2{
+        font-size: 100px;
+    }
+
+    .overskrift h2{
+        font-size: 60px;
+    }
+
+    .um > .main_content .navigation .liste > p{
+        display: none;
+    }
+
+    .um > .main_content .navigation .liste > .linje{
+        display: none;
+    }
+
+    .um > .main_content .navigation .filter > p{
+        font-size: 28px;
+        background-color: #FFF0C8;
+        border-radius: 2px;
+    }
+
+    .liste li{
+        font-size: 18px;
+    }
+
+    .liste {
+        display: none;
+    }
+
+    .mobilliste{
+        display: block;
+    }
+
+    .mobilliste ul{
+        font-size: 24px;
+        font-family: 'dosis';
+    
+        color: black;
+    }
+    
+    .mobilliste li{
+      margin-bottom: 20px; 
+      list-style: circle;
+    }
+    
+    .mobilliste a{
+        color: black; 
+    
+        transition: 1s;
+    }
+    
+    .mobilliste a:hover{
+        color: #402415; 
+        text-decoration-line: underline;
+    }
+
+    .filter{
+        font-family:'Cormorant';
+
+        width: 80px;
+        height: 25px;
+        left: 339px;
+        top: 341px;
+
+        margin: 15px;
+
+        background: #D9D9D9;
+        border-radius: 2px;
+    }
+
+    .mini_kort {
+        gap: 5px;
+    }
+
+    .um .main_content .kort-wrap .mini_kort a .små_kort {
+        width: 110px;
+        height: 89px;
+        margin: 0;
+    }
+    
+
+    #kurv{
+        margin-right:-10px;
+    }
+
+    #nyheder .item1 img{
+        width: 100%;
+    }
+    
+    #mobilnav img{
+        height: 120%;
+        margin-left:40px;
+        margin-top:-25px;
+    }
+
+    #logo{
+        top:0px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top:10px;
+    }
+
+    #logo img{
+        height: 120px;
+        top:10px;
+        z-index:2;
+    }
+
+    #under_logo{
+        top:0px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top:10px;
+        left:39%;
+    }
+
+    #under_logo img{
+        height: 120px;
+        top:10px;
+        z-index:2;
+    }
+
+    .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    input[type="text"] {
+        margin-top: 200px;
+        margin-bottom:100px;
+        width: 308px;
+        height: 37px;
+        border-radius: 40px;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:70px
+    }
+
+    .row{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        margin-bottom:100px;
+    }
+
+    .row section{
+        height: 300px;
+        margin-top:15px;
+    }
+
+    #laptopfooter{
+        display: none;
+    }
+
+    #mobilfooter {
+        display: block;
+        border-top: solid 2px #402415;
+    }
+
+    #mobilfooter{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        padding: 2% 10%;
+        display: flex;
+        flex-direction: column;
+        }
+
+    #mobilfooter .footerikoner{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /*padding-top: 20px;*/
+        }
+    
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        }
+            
+    .footerlogo {
+        padding-top: 40px;
+        }
+        
+    .footerlogo img{
+        margin-bottom: 10px;
+        }
+
+    .femkollonner{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+        }
+    
+    .femkollonner .lister{
+        width: 25%;
+        }
+    
+    .femkollonner h3{
+        font-family: 'Luckiest Guy';
+        font-size: xx-large;
+        color:#c3996e; 
+        border-radius: 15px;
+        padding: 15px 0px 5px 0px;
+        }
+
+
+    .navigation p{
+        text-align: left;
+
+        font-family:'Cormorant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    ul{ 
+        list-style-type: none;
+        text-align: left;
+        justify-content: center;
+        font-family: sans-serif;
+        padding: 32px 0px;
+        }
+
+    .lister ul li {
+        margin: 10px 0;
+        text-align: center;
+        font-family: 'Luckiest Guy';
+        }
+        
+    ul hr{
+        display: none;
+        } 
+}
+
+/*Mobil*/
+@media only screen and (max-width: 700px){
+    #mobilfooter{
+        display: flex;
+    }
+    
+    .femkollonner{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .femkollonner > div{
+        width: 100%;
+    }
+
+    .femkollonner > .lister{
+        width: 100%;
+    }
+
+    .footerikoner{
+        height: 300px;
+        /*padding-bottom: 20px;*/
+    }
+
+    .lister ul li {
+        text-align: center;
+    }
+
+    ul hr{
+        display: block;
+    }
+    .footerlogo {
+        padding-top: 40px;
+        }
+        
+    .footerlogo img{
+        margin-bottom: 10px;
+        }
+}
+
+/*styles til burgermenu*/
+
+#headermenu {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff0c8;
+    padding: 0 50px 0 50px;
+}
+
+#headermenu a #headermenulogo{
+    animation: rotate 1.5s ease-out 0.2s forwards;
+    margin-top: 45%; /*Skubber logoet ned over headeren*/
+    
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+#mainmenu {    
+    background-color: #c3996e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: x-large;
+    background-image: url(tintinburgermenu.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+    
+}
+
+#mainmenu a{
+    width: 200px;/*Længden på stregerne*/
+    border-bottom: 2px solid black;
+    margin: 0 12px;
+    line-height: 50px;
+}
+
+#mainmenu a, #footermenu a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Luckiest Guy';
+}
+
+#mainmenu a:visited, #footermenu a:visited{
+    color: black;
+}
+
+#mainmenu .mobildropdown{
+    margin-left: 42px;
+    font-size: large;
+}
+
+#mainmenu .mobildropdown a{
+    margin: 10px 0px;
+    line-height: 35px;
+}
+
+#mainmenu, #footermenu {
+    padding: 5% 10% 5% 40px;
+}
+
+#footermenu {
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footermenu div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footermenu div:first-child {
+    justify-content: space-around;
+}
+
+#footermenuikoner {
+    /*background-color: #402415;*/
+    width: 60%;
+    align-items: center;
+}
+
+#footermenuikoner .socials{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+}
+
+#footermenuikoner .footerlogo{
+    display: flex;
+    align-items: center;
+    padding-top: 4%;
+}
+
